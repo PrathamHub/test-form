@@ -24,7 +24,7 @@ mongoose.connect(
   "mongodb+srv://pratham:pratham123@cluster0.rkqttza.mongodb.net/test-form"
 );
 
-app.post("https://test-form-frontend.vercel.app/register", async (req, res) => {
+app.post("/register", async (req, res) => {
   const { name, email, username, phone, gender, dob, address, skills } =
     req.body;
   try {
