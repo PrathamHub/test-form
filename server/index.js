@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 });
 
 mongoose.connect(
-  "mongodb+srv://pratham:Pratham123@cluster0.rkqttza.mongodb.net/test-form?retryWrites=true&w=majority&appName=Cluster0"
+  "mongodb+srv://pratham:pratham123@cluster0.rkqttza.mongodb.net/test-form"
 );
 
 app.post("https://test-form-frontend.vercel.app/register", async (req, res) => {
