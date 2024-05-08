@@ -20,7 +20,7 @@ const Form = () => {
     const { name, email, username, gender, dob, phone, address, skills } = data;
     e.preventDefault();
     try {
-      await axios.post("/", {
+      await axios.post("/register", {
         name,
         email,
         username,
