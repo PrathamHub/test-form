@@ -8,12 +8,14 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    credentials: true,
-    origin: ["https://test-form-frontend.vercel.app"],
+    origin: "https://test-form-frontend.vercel.app",
     methods: ["POST", "GET"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
 dotenv.config();
+
 app.get("/", (req, res) => {
   res.send("On /");
 });
@@ -44,5 +46,5 @@ app.post("/", async (req, res) => {
 });
 
 app.listen(8000, () => {
-  console.log("listening");
+  console.log("Server is running on port 8000");
 });
