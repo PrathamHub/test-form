@@ -20,7 +20,7 @@ const Form = () => {
     const { name, email, username, gender, dob, phone, address, skills } = data;
     e.preventDefault();
     try {
-      await axios.post("test-form-api.vercel.app", {
+      await axios.post("https://test-form-api.vercel.app/register", {
         name,
         email,
         username,
