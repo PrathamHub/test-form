@@ -22,7 +22,7 @@ mongoose.connect(
   "mongodb+srv://pratham:Pratham123@cluster0.rkqttza.mongodb.net/test-form?retryWrites=true&w=majority&appName=Cluster0"
 );
 
-app.post("https://test-form-api.vercel.app", async (req, res) => {
+app.post("/", async (req, res) => {
   const { name, email, username, phone, gender, dob, address, skills } =
     req.body;
   try {
