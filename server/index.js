@@ -25,9 +25,7 @@ mongoose.connect(
 );
 
 app.post("/register", async (req, res) => {
-   res.header("Access-Control-Allow-Origin", "https://test-form-frontend.vercel.app");
-  res.header("Access-Control-Allow-Methods", "POST, GET");
-  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+ 
   const { name, email, username, phone, gender, dob, address, skills } =
     req.body;
   try {
