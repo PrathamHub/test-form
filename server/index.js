@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 });
 
 mongoose.connect(
-  "mongodb+srv://pratham:pratham123@cluster0.rkqttza.mongodb.net/test-form"
+  "mongodb+srv://pratham:pratham123@cluster0/test-form?retryWrites=true&w=majority""
 );
 
 app.post("/register", async (req, res) => {
