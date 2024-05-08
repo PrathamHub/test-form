@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(
   cors({
     credentials: true,
-    origin: ["https://test-form-frontend.vercel.app"],
+    origin: ["https://test-form-frontend.vercel.app/register"],
     methods: ["POST", "GET"],
   })
 );
